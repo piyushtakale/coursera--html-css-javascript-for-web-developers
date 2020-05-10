@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* tag/element selector */
+        h1{
+            color: red;
+            font-size: 30px;
+        }
+        /* tag/element selector */
+        p{
+            font-style: oblique;
+        }
+        /* class selector */
+        .show{
+            width: 30%;
+        }
+        /* combination selector */
+        p, .show{
+            color: gray;
+        }
+        /* id selector */
+        #highlight{
+            background-color: yellow;
+            color: blue;
+            font-weight: 200;
+        }
+        /* combination selector */
+        .show, #highlight{
+            font-family: sans-serif;
+        }
+        /*immediate/direct child selector*/
+        article > p{
+            color:green
+        }
+        /*child/decendent selector*/
+        span p{
+            color: pink;
+        }
+        /*all p elements with class .para*/
+        p.para{
+            font-size: 25px;
+        }
+    </style>
+    
+</head>
+<body>
+    <!--tag/element selector-->
+    <h1>this is heading tag</h1>
+    <p>this is p tag content</p>
+
+    <!--class selector-->
+    <div class="show">this text is formatted using class selector this text is formatted using class selector this text is formatted using class selector this text is formatted using class selector this text is formatted using class selectorvthis text is formatted using class selector</div>
+    
+    <!--id selector-->
+    <span id="highlight">this is formatted using id selector</span>
+
+    <!--immidiate/direct child selector-->
+    <article>
+        <p>this is paragraph inside article- immediate child selector example</p>
+    </article>
+    <article>
+        <div>
+            <p>this is paragraph inside div inside article immediate child selector example</p>
+        </div>
+    </article>
+
+    <!--decendent element child selector-->
+    <span>
+        <p>this is paragraph inside article- child selector example</p>
+    </span>
+    <span>
+        <div>
+            <p>this is paragraph inside div inside article child selector example</p>
+        </div>
+    </span>
+
+    <!--all p elements with class .para-->
+    <p class="para">element p with class para</p>
+    <p>element p without class para</p>
+    <a href="https://www.w3schools.com/cssref/css_selectors.asp">all other selectors</a>
+</body>
+</html>
