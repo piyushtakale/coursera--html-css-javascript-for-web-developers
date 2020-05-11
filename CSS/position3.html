@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+         p{
+            width: 100px;
+            height: 100px;    
+            margin-bottom: 10px;
+        }
+        #p1{
+            background-color: red;
+            position: relative;
+            top:110px;
+            left:110px;
+        }
+        #p2{
+            background-color: blue;
+        }
+        #p3{
+            background-color: green;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #p4{
+           
+            background-color:yellow;
+        }
+        div{
+            background-color: aqua;
+            position: relative;
+            top:60px;
+        }
+        section{
+            clear:left;
+        }
+        /*absolute postion needs parent or ancesstor
+         goes up to chain and checks if parent has postion set 
+         if no then goes to parent of that element and so on*/
+    </style>
+</head>
+<body>
+    <h1>this is absolute positionning</h1>
+    <div>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <section>
+            this is section text 
+        </section>
+    </div>
+</body>
+</html>
