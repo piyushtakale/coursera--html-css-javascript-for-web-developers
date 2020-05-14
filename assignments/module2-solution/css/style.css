@@ -29,15 +29,15 @@ h1{
 .row > div > div{
     background-color: #8de4af;
     height:200px;
-    padding: 7px;
+    padding: 7px 10px 5px 10px;
     border-radius: 1px;
     position: relative;
     border: 1px solid black;
 } 
 .row p{
-    margin: 25px 0px 0px 0px;
+    margin: 30px 0px 0px 0px;
     overflow-y: scroll;
-    height: 150px;
+    height: 155px;
     color: black;
     
 }
@@ -205,6 +205,7 @@ section{
 }
 #sec2{
     background-color: rgb(255, 136, 0);
+    color: black;
 }
 #sec3{
     background-color: rgb(68, 70, 0);
