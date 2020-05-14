@@ -199,7 +199,7 @@ section{
     color: white;
     border-top-right-radius: 1px;
     border-left: 1px solid black;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
 }   
 #sec1{
     background-color: maroon;
