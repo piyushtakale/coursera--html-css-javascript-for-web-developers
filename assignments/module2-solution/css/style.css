@@ -198,7 +198,8 @@ section{
     right: 0;
     color: white;
     border-top-right-radius: 1px;
-    border: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
 }   
 #sec1{
     background-color: maroon;
