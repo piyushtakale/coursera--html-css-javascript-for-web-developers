@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .democlass {
+            color: red;
+        }
+        .democlas {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>asdfsdf</h1>
+    <p id="p1">tera bhai bete bohot tezz bohot tezz</p>
+    <p id="p2">tera bhai bete bohot tezz bohot tezz</p>
+    <div id="di">
+        <p id="p1">tera bhai bete bohot tezz bohot tezz</p>
+        <p id="p2">tera bhai bete bohot tezz bohot tezz</p>
+    </div>
+    <script>
+        var pr1 = document.getElementById("di");
+        document.getElementsByTagName("H1")[0].setAttribute("class", "democlass");
+        console.log(document.getElementsByTagName("H1")[0]);
+        document.getElementById("di").setAttribute("class", "democlass");
+        console.log(pr1.getAttribute("class"));
+        console.log(pr1.children[0]);
+        pr1.children[0].setAttribute("class", "democlas");
+        console.log(pr1.children.length);
+
+        pr1.addEventListener("click", ale.bind(null, event,this),false);
+        function ale(ohoh, event, mi){
+            console.log(mi);
+            console.log(event);
+            alert("bc");
+        }
+    </script>
+</body>
+
+</html>
